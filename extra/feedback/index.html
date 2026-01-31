@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gn-bio feedback form</title>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+        publicKey: "eERX1pDoOwoF4eDMW",
+        });
+        })();
+    </script>
+    <script src="/index.js"></script>
+    </head>
+    <body>
+        <link rel="stylesheet" href="/style.css">
+        <script src="index.js"></script>
+        <a class="btn" href="/">Go back</a> <br>
+        <h1 class="outline">Welcome to the gn-bio feedback and support page.</h1>
+        <h5>Optional: 1) Enter your email if you would like a response from the Math Class Games team. </h5>
+        <h5> 2) Do you need help with the website, want to submit a game, (provide g drive link) or something else?</h5>
+        <h5> 3) Please provide more information here, (leave your g drive link here if you want to submit a game).</h5>
+        <h4>Also we use emailjs to make these forms work, so please use this only if necessary, as we have a limited number of emails each month.</h4>
+        1 <input id="email"> <br>
+        2 <input id="whatNeedHelpWith"> <br>
+        3 <input id="moreInfo">
+        <button onclick="sendMail()">Submit</button> <br>
+        <h3>Alternatively, you can send us an email with the email at the bottom of the page</h3>
+        <div class="footer"> <!--also you should copy paste this bottom thing in all the pages of the webiste bevcause uhh idk-->
+            <hr>
+            <h5 class="bottom-text">gn-bio by Math Class Games </h5>
+            <h5 class="bottom-text">mathclassgames2@gmail.com</h5>
+            <h5 class="bottom-text">another one</h5>
+            <h5 class="bottom-text">imagine these all have important stuff</h5>
+            <h5 class="bottom-text">last placeholder</h5>
+            <h5 class="bottom-text">nevermind room for more</h5>
+            <!--place all h5s before the br, so theyre next to each other-->
+            <br>
+            <a href="/extra/feedback/" class="buttonBlack">Feedback and support</a> <a href="/" class="buttonBlack">Home</a>
+            <!--Put all other buttons and text before the br and hr, so theyre next to each otehr-->
+            <br> <hr>
+        </div>
+    </body>
+</html>
